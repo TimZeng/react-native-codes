@@ -39,7 +39,11 @@ class App extends Component {
       case false:
         return <LoginForm />;
       default:
-        return <Spinner size='large' />;
+        return (
+          <View style={styles.contentStyle}>
+            <Spinner size='large' />
+          </View>
+        );
     }
   }
 
